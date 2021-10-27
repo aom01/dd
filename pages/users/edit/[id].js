@@ -8,7 +8,7 @@ import axios from 'axios'
 import { useRouter } from 'next/router'
 
 export const getStaticPaths = async () => {
-  const res = await axios('http://localhost:1337/members');
+  const res = await axios('https://api-itcmtc.herokuapp.com/members');
   const data = res.data;
   const paths = data.map(users => {
     return {
@@ -26,7 +26,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   // get posts from our api
   const id = context.params.id;
-  const res = await axios.get('http://localhost:1337/members/' + id);
+  const res = await axios.get('https://api-itcmtc.herokuapp.com/members/' + id);
   const data = res.data;
 
   return {
@@ -44,7 +44,7 @@ const [password, setPassword] = useState("");
 
 const updateUser = (id) => {
   axios
-  .put('http://localhost:1337/members/' + id, {
+  .put('https://api-itcmtc.herokuapp.com/members/' + id, {
     firstname: firstname,
     lastname: lastname,
     username: username,
