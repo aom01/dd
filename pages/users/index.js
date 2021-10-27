@@ -8,14 +8,15 @@ import Swal from 'sweetalert2'
 
 import { useRouter } from 'next/router'
 
-
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await axios.get("https://api-itcmtc.herokuapp.com/members");
   const data= res.data;
   return {
     props: { users: data}
   }
 }
+
+
 
 const Users = ({ users }) => {
   const router = useRouter()
