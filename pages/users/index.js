@@ -10,7 +10,7 @@ import { useRouter } from 'next/router'
 
 
 export const getStaticProps = async () => {
-  const res = await axios.get("http://localhost:1337/members");
+  const res = await axios.get("https://api-itcmtc.herokuapp.com/members");
   const data= res.data;
   return {
     props: { users: data}
@@ -22,7 +22,7 @@ const Users = ({ users }) => {
 
   const deleteUser = (id) => {
     axios
-    .delete('http://localhost:1337/members/' + id)
+    .delete('https://api-itcmtc.herokuapp.com/members/' + id)
     .then(function (response) {
       console.log(response);
       Swal.fire({
