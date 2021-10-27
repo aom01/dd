@@ -7,7 +7,7 @@ import axios from 'axios'
 
 import { useRouter } from 'next/router'
 
-export const getStaticPaths = async () => {
+export const getServerSideProps = async () => {
   const res = await axios('https://api-itcmtc.herokuapp.com/members');
   const data = res.data;
   const paths = data.map(users => {
@@ -23,7 +23,7 @@ export const getStaticPaths = async () => {
   
   }
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
   // get posts from our api
   const id = context.params.id;
   const res = await axios.get('https://api-itcmtc.herokuapp.com/members/' + id);
