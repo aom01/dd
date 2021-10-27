@@ -16,7 +16,7 @@ class MyDocument extends Document {
                         <meta name="viewport" content="width=device-width, initial-scale=1" />
                         <title>ระบบบริหารจัดการข้อมูล</title>
                         <div>
-                        {/*
+                        
                             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" />
                             <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
                             <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
@@ -38,7 +38,7 @@ class MyDocument extends Document {
                             <Script type="text/javascript" src="plugins/datatables-buttons/js/buttons.print.min.js"></Script>
                             <Script type="text/javascript" src="plugins/datatables-buttons/js/buttons.colVis.min.js"></Script>
                             <Script type="text/javascript" src="js/DataTable.js"></Script>
-                        */}
+                    
                         </div>
 
 
