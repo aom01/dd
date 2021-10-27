@@ -23,7 +23,7 @@ export const getStaticPaths = async () => {
   
   }
 
-export const getServerSideProps = async (context) => {
+export const getStaticProps = async (context) => {
   // get posts from our api
   const id = context.params.id;
   const res = await axios.get('https://api-itcmtc.herokuapp.com/members/' + id);
