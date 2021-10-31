@@ -9,7 +9,7 @@ const AdminSidebar = () => {
   <Link href='#'>
   <a className="brand-link">
     <Image src="/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{opacity: '.8'}} width={20} height={20} />
-    <span className="brand-text font-weight-light">Admin Panel</span>
+    <span className="brand-text font-weight-light">Admin Page</span>
   </a>
   </Link>
   {/* Sidebar */}
@@ -21,7 +21,7 @@ const AdminSidebar = () => {
       </div>
       <div className="info">
       <Link href='#'>
-        <a className="d-block">Mr.Anuchat  Rungsiyanon</a>
+        <a className="d-block">Mr.Kasidit Phosai</a>
       </Link>
       </div>
     </div>
