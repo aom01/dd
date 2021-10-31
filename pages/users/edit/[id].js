@@ -119,7 +119,7 @@ const updateUser = (id) => {
         </div>
       </form>
       <div className="social-auth-links text-center">
-      <button type="button" className="btn btn-success" onClick={() => { updateUser(users.id)}}>ปรับปรุง</button>
+      <button type="button" className="btn btn-success" onClick={() => { updateUser(users.id)}}>แก้ไข</button>
       </div>
     </div>
     {/* /.form-box */}
