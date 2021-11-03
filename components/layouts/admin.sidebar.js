@@ -21,7 +21,7 @@ const AdminSidebar = () => {
       </div>
       <div className="info">
       <Link href='#'>
-        <a className="d-block">Mr.Pathomporn Panyasermwut</a>
+        <a className="d-block">Mr.Thitiwut Phisoodsiang</a>
       </Link>
       </div>
     </div>
